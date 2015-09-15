@@ -4,7 +4,7 @@ import tools
 
 
 SCREEN_SIZE = (600, 600)
-ORIGINAL_CAPTION = "Foxes, Rabbits and Grass"
+ORIGINAL_CAPTION = "Wolves, Rabbits and Grass"
 
 pg.init()
 os.environ['SDL_VIDEO_CENTERED'] = "TRUE"
@@ -13,7 +13,4 @@ SCREEN = pg.display.set_mode(SCREEN_SIZE)
 SCREEN_RECT = SCREEN.get_rect()
 
 
-FONTS = tools.load_all_fonts(os.path.join("resources", "fonts"))
-MUSIC = tools.load_all_music(os.path.join("resources", "music"))
-SFX   = tools.load_all_sfx(os.path.join("resources", "sound"))
 GFX   = tools.load_all_gfx(os.path.join("resources", "graphics"))
