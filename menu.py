@@ -1,5 +1,7 @@
 from random import randint, choice
+import json
 import pygame as pg
+
 import tools, prepare
 from state_engine import GameState
 from labels import Button, ButtonGroup
@@ -63,7 +65,7 @@ class MenuScreen(GameState):
     def load_game(self, *args):
         """
         Load the previously saved populations from JSON and 
-        pass them to the Sim state. 
+        pass them to the Sim state by adding them to self.persist. 
         """
         pass
         

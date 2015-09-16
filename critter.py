@@ -5,6 +5,7 @@ import tools, prepare
 
 
 class Critter(pg.sprite.DirtySprite):
+    """Parent class for Rabbits and Wolves."""
     velocities = {"left": (-1, 0),
                        "right": (1, 0),
                        "up": (0, -1),

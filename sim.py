@@ -45,10 +45,7 @@ class Sim(GameState):
             self.quit = True
             self.save()
         elif event.type == pg.KEYDOWN:
-            if event.key == pg.K_SPACE:
-                for rabbit in self.rabbits:
-                    print rabbit.food
-            elif event.key == pg.K_UP:
+            if event.key == pg.K_UP:
                 self.frame_time = max(5, self.frame_time - 1)
             elif event.key == pg.K_DOWN:
                 self.frame_time += 1
@@ -100,9 +97,9 @@ class Sim(GameState):
         as a JSON dict and write to file.
         """
         saved = {}
-        saved["rabbits"] = [[r.pos, r.direction, r.food] for r in self.rabbits]
+        saved["rabbits"] = [[r.pos, r.direction, r.food, r.age] for r in self.rabbits]
         saved["grass"] = [[g.pos, g.growth] for g in self.grasses]
-        saved["wolves"] = [[w.pos, w.direction, w.food] for w in self.wolves]
+        saved["wolves"] = [[w.pos, w.direction, w.food, w.age] for w in self.wolves]
         with open("save.json", "w") as save_file:
             json.dump(saved, save_file)
         
