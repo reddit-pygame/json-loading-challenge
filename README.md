@@ -2,7 +2,8 @@
 
 This challenge focuses on using the json module for saving and loading an implementation of Wolves, Rabbits and Grass:
 
-https://github.com/reddit-pygame/json-loading-challenge
+https://github.com/reddit-pygame/json-loading-challenge  
+[Link to challenge thread.](https://www.reddit.com/r/pygame/comments/3lafr3/json_loading_challenge/)
 
 
 ##WTF is Wolves, Rabbits and Grass?
